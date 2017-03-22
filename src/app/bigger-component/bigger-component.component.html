@@ -1,0 +1,10 @@
+<div style="border: 1px red solid; padding: 10px">
+  <p>
+    bigger-component works!
+  </p>
+  <div style="margin-bottom: 10px">
+    <input #input type="text"/>
+    <button (click)="pushChangesToSmallerComponent(input.value)">Update value</button>
+  </div>
+  <app-big-component></app-big-component>
+</div>
